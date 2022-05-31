@@ -6,7 +6,7 @@
 ![image.png](https://s2.loli.net/2022/05/31/DaG4VBoM1nqE7hj.png)
 
 ## 安装
-本项目可直接只用[Deta](https://web.deta.sh)进行部署，可直接通过下方按钮将本项目配置到Deta。
+本项目可直接使用[Deta](https://web.deta.sh)进行部署，可直接通过下方按钮将本项目配置到Deta。
 
 [![Deploy](https://button.deta.dev/1/svg)](https://go.deta.dev/deploy?repo=https://github.com/Lord2333/Short_url/)
 
