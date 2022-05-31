@@ -1,0 +1,5 @@
+{
+	"name": "Short_url",
+	"description": "本项目默认解析当前域名为短链接域名，如果想添加多域名选项，可以参考index.html中的注释进行魔改",
+    "cron": "1 day"
+}
