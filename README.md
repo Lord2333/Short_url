@@ -1,6 +1,9 @@
 # Short_url
 短链接生成&amp;解析主程序
-![image.png](https://s2.loli.net/2022/05/31/7hHQf3BO9WvUGec.png)
+
+![Frame](https://img.shields.io/badge/Frame-Flask-blue?logo=Flask&label=框架)![GitHub last commit](https://img.shields.io/github/last-commit/Lord2333/Short_url?logo=github&label=上次更新&link=https://github.com/Lord2333/Short_url)
+
+![image.png](https://s2.loli.net/2022/05/31/DaG4VBoM1nqE7hj.png)
 
 ## 安装
 本项目可直接只用[Deta](https://web.deta.sh)进行部署，可直接通过下方按钮将本项目配置到Deta。
@@ -23,3 +26,5 @@
 
 3. 本项目的文本传送功能对于文本中的回车解析有问题（主要是Deta Base储存时不支持`\n`）后续将对此问题进行修改。
 ![image.png](https://s2.loli.net/2022/05/31/7aeFhJD2zsHgiXV.png)
+   
+4. 本项目没有短代码冲突检查，如果定义了两个重复的短代码将跳转至最新设置的Url。未自定义定义短代码时则会随机生成一个五个字符长的短代码。
