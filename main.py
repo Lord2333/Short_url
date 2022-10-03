@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect, Markup
+from flask import Flask, request, render_template, redirect, escape
 import json, random, time
 from deta import App, Base
 
@@ -45,7 +45,7 @@ def Fetch_code(code):
 		if res[0]['type'] == 'link':
 			return redirect(res[0]['Content'])
 		else:
-			return Markup(res[0]['Content'])
+			return res[0]['Content']
 	else:
 		return '<h1>寄！</h1><p>您输入的短链接莫名其妙的没了呢~</p>'
 
@@ -59,6 +59,8 @@ def up_url(url, code, t, type):
 	# deta = Deta(deta_key)
 	# db = deta.Base('Short')
 	db = Base('Short')
+	if type != 'link':
+		url = escape(url)
 	Data = {
 		'Content': url,
 		'Short_code': code,
