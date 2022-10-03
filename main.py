@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect
+from flask import Flask, request, render_template, redirect, Markup
 import json, random, time
 from deta import App, Base
 
@@ -45,7 +45,7 @@ def Fetch_code(code):
 		if res[0]['type'] == 'link':
 			return redirect(res[0]['Content'])
 		else:
-			return res[0]['Content']
+			return Markup(res[0]['Content'])
 	else:
 		return '<h1>寄！</h1><p>您输入的短链接莫名其妙的没了呢~</p>'
 
